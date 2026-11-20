@@ -1,0 +1,51 @@
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Environment & Secrets (CRITICAL - NEVER COMMIT)
+.env
+.env.*
+!.env.example
+client/.env
+client/.env.*
+!client/.env.example
+server/.env
+server/.env.*
+!server/.env.example
+
+# Certificates & Keys
+*.pem
+*.key
+*.keystore
+*.p12
+*.crt
+*.pfx
+
+# Databases
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+server/prisma/*.db
+server/prisma/*.db-journal
+server/prisma/*.sqlite
+
+# Uploads & Runtime
+server/uploads/*
+!server/uploads/.gitkeep
+
+# Build & Dist
+dist/
+build/
+client/dist/
+server/dist/
+coverage/
+
+# Logs & OS
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
